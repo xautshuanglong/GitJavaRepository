@@ -15,6 +15,7 @@ public class LoggerTest
         logger.debug("debug");
         logger.warn("warn");
         logger.fatal("fatal");
+        
         logger.log(Level.DEBUG, "log SpecifyLevel");
         logger.error("error");
         logger.exit();
