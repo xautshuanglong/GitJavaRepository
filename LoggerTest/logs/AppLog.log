@@ -1,0 +1,8 @@
+20160310 19:18:08.625[main]INFO  LoggerTest-info
+20160310 19:18:08.626[main]DEBUG LoggerTest-debug
+20160310 19:18:08.627[main]WARN  LoggerTest-warn
+20160310 19:18:08.627[main]FATAL LoggerTest-fatal
+20160310 19:18:08.629[main]DEBUG LoggerTest-log SpecifyLevel
+20160310 19:18:08.629[main]ERROR LoggerTest-error
+20160310 19:18:08.632[main]INFO  com.shuanglong.outsideClassLoggger-constructed
+20160310 19:18:08.632[main]INFO  com.shuanglong.outsideClassLoggger-print function
