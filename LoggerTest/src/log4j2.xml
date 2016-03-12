@@ -20,7 +20,6 @@
 		
 		<RollingFile name="RollingFile" fileName="${rolling_file_name}" filePattern="${rolling_file_pattern}">
 			<PatternLayout pattern="${log_pattern}"/>
-
 			<policies>
 				<TimeBasedTriggeringPolicy interval="24" modulate="true"/>
             	<SizeBasedTriggeringPolicy size="${every_file_size}" />
