@@ -6,4 +6,5 @@ public class MainClass
 	{
 		System.out.println("=========================== Java JNI Test ===========================");
 	}
+	
 }
