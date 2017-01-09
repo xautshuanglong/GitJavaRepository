@@ -8,7 +8,15 @@ public class MainClass
 {
 	static
 	{
-		System.loadLibrary("libs/JniExample");
+		String archModel = System.getProperty("sun.arch.data.model");
+		if (archModel.equalsIgnoreCase("32"))
+		{
+			System.loadLibrary("libs/x86/JniExample");
+		}
+		else if (archModel.equalsIgnoreCase("64"))
+		{
+			System.loadLibrary("libs/x64/JniExample");
+		}
 	}
 	
 	public static void main(String[] args)
