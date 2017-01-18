@@ -1,9 +1,5 @@
 package com.shuanglong;
 
-import java.beans.DefaultPersistenceDelegate;
-import java.io.IOException;
-import java.security.spec.DSAGenParameterSpec;
-
 import com.shuanglong.jni.MathToolTest;
 import com.shuanglong.jni.MethodForCpp;
 import com.shuanglong.jni.StringTest;
@@ -28,16 +24,5 @@ public class MainClass
 		MathToolTest.native_transFloat(floatToBeTrans);
 	
 		MethodForCpp.native_cppCallJavaTest();
-//		MethodForCpp.staticMethodSyaHello("MethodForCpp.staticMethodSyaHello testing");
-//		MethodForCpp mTest = new MethodForCpp();
-//		mTest.instanceMethodPrintString("mTest.instanceMethodPrintString testing");
-		
-//		try
-//		{
-//			System.in.read();
-//		} catch (IOException e)
-//		{
-//			e.printStackTrace();
-//		}
 	}
 }
