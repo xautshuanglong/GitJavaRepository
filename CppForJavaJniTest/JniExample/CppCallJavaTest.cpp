@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-void Native_CppCallJavaTest(JNIEnv *env, jclass cls)
+void JNICALL Native_CppCallJavaTest(JNIEnv *env, jclass cls)
 {
 	std::cout << "Inside JNI Native_CppCallJavaTest" << std::endl;
 
@@ -10,7 +10,7 @@ void Native_CppCallJavaTest(JNIEnv *env, jclass cls)
 	CallInstanceMethod(env);
 }
 
-void CallStaticMethod(JNIEnv *env)
+void JNICALL CallStaticMethod(JNIEnv *env)
 {
 	std::cout << "Inside JNI CallStaticMethod" << std::endl;
 
@@ -37,7 +37,7 @@ void CallStaticMethod(JNIEnv *env)
 	env->DeleteLocalRef(clazz);
 }
 
-void CallInstanceMethod(JNIEnv *env)
+void JNICALL CallInstanceMethod(JNIEnv *env)
 {
 	std::cout << "Inside JNI CallInstanceMethod" << std::endl;
 
