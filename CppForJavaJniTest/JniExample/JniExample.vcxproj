@@ -136,7 +136,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F /D $(OutDir)*.dll $(SolutionDir)..\JavaJniTest\libs</Command>
+      <Command>xcopy /Y /F /D $(OutDir)*.dll $(SolutionDir)..\JavaJniTest\libs\$(PlatformShortName)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -158,7 +158,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F /D $(OutDir)*.dll $(SolutionDir)..\JavaJniTest\libs</Command>
+      <Command>xcopy /Y /F /D $(OutDir)*.dll $(SolutionDir)..\JavaJniTest\libs\$(PlatformShortName)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
